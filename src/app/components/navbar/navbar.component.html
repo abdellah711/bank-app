@@ -1,0 +1,12 @@
+<nav class="border-b bg-slate-50 mb-5">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-2 py-4">
+        <a class="bg-gradient-to-r from-blue-400 to-blue-500 font-bold text-3xl bg-clip-text text-transparent"
+            routerLink="/">Bank</a>
+        <ul class="flex gap-5">
+            <li><a routerLink="/" routerLinkActive="text-blue-500"
+                    [routerLinkActiveOptions]="{exact:true}">Dashboard</a></li>
+            <li><a routerLink="/customers" routerLinkActive="text-blue-500"
+                    [routerLinkActiveOptions]="{exact:true}">Customers</a></li>
+        </ul>
+    </div>
+</nav>
