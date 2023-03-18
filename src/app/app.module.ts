@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CustomerCardComponent } from './components/customer-card/customer-card.component';
 import { CustomersListComponent } from './components/customers-list/customers-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { StatsComponent } from './components/stats/stats.component';
 import { DashboardRouteComponent } from './dashboard-route/dashboard-route.component';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { DashboardRouteComponent } from './dashboard-route/dashboard-route.compo
     CustomerCardComponent,
     NavbarComponent,
     CustomersListComponent,
+    StatsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <div *ngIf="isLoading" class="grid place-items-center pt-5">
-    <div class="w-8 aspect-square border-2 border-blue-500 border-t-transparent animate-spin rounded-full"></div>
+    <div class="progress"></div>
 </div>
-<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 pb-5">
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 pb-5">
     <app-customer-card *ngFor="let customer of customers" [customer]="customer"
         (delete)="onDelete($event)"></app-customer-card>
 </div>
