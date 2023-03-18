@@ -299,16 +299,6 @@
       "address": "3 Anniversary Court",
       "account-type": "checking",
       "balance": 880
-    },
-    {
-      "firstName": "alaoui",
-      "lastName": "abdellah",
-      "email": "alaoui.midelt@gmail.com",
-      "address": "test",
-      "balance": "2000",
-      "gender": "Male",
-      "account-type": "savings",
-      "id": "4SzbHbW"
     }
   ]
 }

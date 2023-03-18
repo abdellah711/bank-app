@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Customer } from 'src/app/models/customer.model';
 
@@ -12,7 +12,9 @@ import { Customer } from 'src/app/models/customer.model';
 })
 export class CustomerCardComponent {
   @Input() customer!: Customer;
+  @Output() delete = new EventEmitter<Customer>()
 
-
-
+  onDelete() {
+    this.delete.emit(this.customer)
+  }
 }

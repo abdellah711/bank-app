@@ -39,4 +39,9 @@ export class CustomersRouteComponent {
     });
   }
 
+
+  onDelete(customer: Customer) {
+    this.customers = this.customers?.filter(c => c.id !== customer.id)
+  }
+
 }

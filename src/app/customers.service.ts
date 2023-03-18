@@ -28,4 +28,8 @@ export class CustomersService {
     return this.http.post<Customer>(`${BASE_URL}/customers`, customer);
   }
 
+  deleteCustomer(id: string): Observable<any> {
+    return this.http.delete(`${BASE_URL}/customers/${id}`);
+  }
+
 }

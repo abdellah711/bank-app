@@ -1,4 +1,4 @@
 <div class="flex flex-col gap-5">
     <a routerLink="/customers/new" class="py-2 px-4 bg-blue-500/10 text-blue-500 rounded-md self-end">Create new customer</a>
-    <app-customers-list [customers]="customers" [isLoading]="isLoading" [error]="error"></app-customers-list>
+    <app-customers-list [customers]="customers" [isLoading]="isLoading" [error]="error" (delete)="onDelete($event)"></app-customers-list>
 </div>
