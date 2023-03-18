@@ -44,4 +44,8 @@ export class CustomersService {
     return this.http.delete(`${BASE_URL}/customers/${id}`);
   }
 
+  search(query: string): Observable<Customer[]> {
+    return this.http.get<Customer[]>(`${BASE_URL}/customers?q=${query}`);
+  }
+
 }

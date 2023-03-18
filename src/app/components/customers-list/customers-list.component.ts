@@ -4,11 +4,12 @@ import { Customer } from 'src/app/models/customer.model';
 import { CustomerCardComponent } from '../customer-card/customer-card.component';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 import { CustomersService } from 'src/app/customers.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-customers-list',
   standalone: true,
-  imports: [CommonModule, CustomerCardComponent, ModalComponent],
+  imports: [CommonModule, CustomerCardComponent, ModalComponent,RouterModule],
   templateUrl: './customers-list.component.html',
   styles: [
   ]
