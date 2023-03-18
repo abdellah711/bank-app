@@ -3,18 +3,20 @@ import { CommonModule } from '@angular/common';
 import { CustomersService } from '../customers.service';
 import { Customer } from '../models/customer.model';
 import { CustomersListComponent } from '../components/customers-list/customers-list.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-customers-route',
   standalone: true,
-  imports: [CommonModule,CustomersListComponent],
+  imports: [CommonModule, CustomersListComponent, RouterModule],
   templateUrl: './customers-route.component.html',
   styles: [
   ]
 })
 export class CustomersRouteComponent {
 
-  customers?:Customer[]
+  customers?: Customer[]
   isLoading = true
   error?: string
 

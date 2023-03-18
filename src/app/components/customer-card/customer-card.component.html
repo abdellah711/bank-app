@@ -1,9 +1,11 @@
-<a class="border rounded-md p-3 flex gap-3">
-    <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Customer Image" class="rounded-full h-16 w-16">
-    <div class="flex-1">
+<a class="border rounded-md p-3 flex gap-4">
+    <img *ngIf="customer.gender === 'Male'" src="assets/avatar.svg" alt="" class="rounded-full h-16 w-16">
+    <img *ngIf="customer.gender === 'Female'" src="assets/female-avatar.svg" alt="" class="rounded-full h-16 w-16">
+    <div class="flex-1 flex flex-col gap-1">
         <h2 class="font-semibold text-zinc-800">{{ customer.firstName | titlecase }} {{ customer.lastName | titlecase }}
         </h2>
         <p class="text-zinc-600">{{ customer.email }}</p>
+        <p class="font-semibold text-sm text-blue-900 mt-1">{{customer.balance | currency}}</p>
     </div>
     <div class="flex flex-col gap-2 justify-center">
         <button class="bg-blue-500/10 p-1 rounded-md text-blue-500">

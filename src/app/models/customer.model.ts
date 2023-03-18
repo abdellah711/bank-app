@@ -5,4 +5,6 @@ export interface Customer {
   email: string;
   gender: string;
   address: string;
+  'account-type': 'checking' | 'savings';
+  balance: number;
 }
