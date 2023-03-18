@@ -289,16 +289,6 @@
       "address": "69915 Messerschmidt Circle",
       "account-type": "savings",
       "balance": 1920
-    },
-    {
-      "id": "a0299050-7a99-4eab-8d42-d0bce08f0e85",
-      "firstName": "Vale",
-      "lastName": "Gallier",
-      "email": "vgalliert@blog.com",
-      "gender": "Male",
-      "address": "3 Anniversary Court",
-      "account-type": "checking",
-      "balance": 880
     }
   ]
 }
