@@ -10,13 +10,13 @@ import { CommonModule } from '@angular/common';
   ]
 })
 export class ModalComponent {
-  @Input() title?: string
+  @Input('modal-title') title?: string
   @Input() body?: string
-  
+
   @Output() close = new EventEmitter<void>()
 
   onClose(event: Event) {
-    if(event.target === event.currentTarget) {
+    if (event.target === event.currentTarget) {
       this.close.emit()
     }
   }

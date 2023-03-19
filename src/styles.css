@@ -11,4 +11,15 @@
     .progress {
         @apply w-8 aspect-square border-2 border-blue-500 border-t-transparent animate-spin rounded-full
     }
+
+    .animate-appearance {
+        animation: appearance 0.2s ease forwards;
+    }
+
+    @keyframes appearance {
+        from {
+            opacity: .5;
+            transform: scale(1.5);
+        }
+    }
 }
