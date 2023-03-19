@@ -11,16 +11,6 @@
       "balance": 400
     },
     {
-      "id": "c25605e0-429a-4ac2-8304-56a1b9819e37",
-      "firstName": "Pooh",
-      "lastName": "Maliphant",
-      "email": "pmaliphant1@illinois.edu",
-      "gender": "Male",
-      "address": "1 Ilene Road",
-      "account-type": "checking",
-      "balance": 1000
-    },
-    {
       "id": "ca32646f-e09e-462d-b1e5-76cd9eb16d87",
       "firstName": "Charla",
       "lastName": "Courteney",
@@ -279,16 +269,6 @@
       "address": "9299 Erie Junction",
       "account-type": "checking",
       "balance": 740
-    },
-    {
-      "id": "829faa61-7264-446b-96ef-47f26c037fb4",
-      "firstName": "Davie",
-      "lastName": "Town",
-      "email": "dtowns@e-recht24.de",
-      "gender": "Male",
-      "address": "69915 Messerschmidt Circle",
-      "account-type": "savings",
-      "balance": 1920
     }
   ]
 }

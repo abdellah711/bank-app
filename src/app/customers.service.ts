@@ -48,4 +48,8 @@ export class CustomersService {
     return this.http.get<Customer[]>(`${BASE_URL}/customers?q=${query}`);
   }
 
+  getCustomerById(id: string): Observable<Customer> {
+    return this.http.get<Customer>(`${BASE_URL}/customers/${id}`);
+  }
+
 }
