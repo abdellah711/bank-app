@@ -30,6 +30,7 @@ export class CustomerDetailsRouteComponent implements OnInit {
         return this.customersService.getCustomerById(params['id'])
       }))
       .subscribe(data => {
+        // todo: handle user not found case
         this.customer = data
         this.isLoading = false
       })

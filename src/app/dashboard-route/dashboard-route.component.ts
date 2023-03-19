@@ -29,8 +29,8 @@ export class DashboardRouteComponent implements OnInit {
       customers: this.customersService.getAllCustomers(12),
     }).subscribe({
       next: ({ customers, stats }) => {
-        this.customers = customers,
-          this.stats = stats
+        this.customers = customers
+        this.stats = stats
       },
       error: (err) => {
         if (err instanceof Error) {

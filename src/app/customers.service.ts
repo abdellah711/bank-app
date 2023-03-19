@@ -26,7 +26,7 @@ export class CustomersService {
 
   getStats(): Observable<Stats> {
     return this.http.get<Customer[]>(`${BASE_URL}/customers`).pipe(map(customers => {
-      const totalBalance = customers.reduce((acc, customer) => acc + customer.balance, 0)
+      const totalBalance = customers.reduce((acc, customer) => acc + +customer.balance, 0)
       const totalCustomers = customers.length
       return { totalBalance, totalCustomers }
     }))
@@ -52,4 +52,8 @@ export class CustomersService {
     return this.http.get<Customer>(`${BASE_URL}/customers/${id}`);
   }
 
+  editCustomer(id: string, customer: Customer): Observable<Customer> {
+    return this.http.put<Customer>(`${BASE_URL}/customers/${id}`, customer);
+  }
+  
 }

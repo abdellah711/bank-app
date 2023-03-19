@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AbstractControl, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CustomersService } from '../customers.service';
-import { map } from 'rxjs';
+import { debounceTime, map } from 'rxjs';
 import { Router } from '@angular/router';
+import { CustomerFormComponent } from '../components/customer-form/customer-form.component';
 
 @Component({
   selector: 'app-create-customer-route',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, CustomerFormComponent],
   templateUrl: './create-customer-route.component.html',
   styles: [
   ]
@@ -28,7 +29,7 @@ export class CreateCustomerRouteComponent {
       balance: [0, [Validators.required, Validators.min(0)]],
       gender: ['Male'],
       'account-type': ['checking'],
-    });
+    })
   }
 
 

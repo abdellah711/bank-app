@@ -4,6 +4,7 @@ import { CreateCustomerRouteComponent } from './create-customer-route/create-cus
 import { CustomerDetailsRouteComponent } from './customer-details-route/customer-details-route.component';
 import { CustomersRouteComponent } from './customers-route/customers-route.component';
 import { DashboardRouteComponent } from './dashboard-route/dashboard-route.component';
+import { EditCustomerRouteComponent } from './edit-customer-route/edit-customer-route.component';
 import { SearchRouteComponent } from './search-route/search-route.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'customers', component: CustomersRouteComponent },
   { path: 'customers/new', component: CreateCustomerRouteComponent },
   { path: 'search/:query', component: SearchRouteComponent },
-  {path: 'customers/:id', component: CustomerDetailsRouteComponent}, 
+  { path: 'customers/:id', component: CustomerDetailsRouteComponent },
+  { path: 'customers/:id/edit', component: EditCustomerRouteComponent },
   { path: '**', redirectTo: '' }
 ];
 
